@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.buttons{
+			width: 80px;
+			height: 60px;
+			font-size: 25px;
+			
+		}
+
+		#textarea{
+			margin: 5px;
+			width: 324px;
+			height: 50px;
+			font-size: 25px;
+		}
+
+		body{
+			height: 100%;
+			background: #333333;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
+
+		#main{
+			position: absolute;
+			left: 40%;
+			
+		}
+		
+	</style>
+
+	<script type="text/javascript">
+
+		var text = document.querySelector("#textarea");
+		
+
+		//clear button "C"
+		function clearText(){
+			document.querySelector("#textarea").value = "";
+		}
+
+		//backspace "<<"
+		function back(){
+
+			console.log("back");
+			
+			//console.log(valuetext);
+			document.querySelector("#textarea").value = document.querySelector("#textarea").value.substring(0, document.querySelector("#textarea").value.length -1);
+
+		}
+
+		//insert function
+		function insert(num){
+			document.querySelector("#textarea").value = document.querySelector("#textarea").value + num;
+			
+		}
+
+		//evaluate function
+		function equals(){
+			var exp = document.querySelector("#textarea").value;
+
+			if(exp){
+				document.querySelector("#textarea").value =  document.querySelector("#textarea").value + " = " + eval(exp);
+			}
+			
+		}
+
+
+
+		
+	</script>
+</head>
+<body>
+
+	<div id="main">
+		<form>
+			<div style = "margin-left: 0;">
+				<input id="textarea" type="text" name="">
+			</div>
+			<div style = "margin-left: 0;">
+				<table>
+					<tr>
+						<td>
+							<input onclick="clearText()" class="buttons" type="button" name="" value="C">
+							<input onclick="back()" class="buttons" type="button" name="" value="<<">
+							<input onclick="insert('%')" class="buttons" type="button" name="" value="%">
+							<input onclick="insert('/')" class="buttons" type="button" name="" value="/">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input onclick="insert(7)" class="buttons" type="button" name="" value="7">
+							<input onclick="insert(8)" class="buttons" type="button" name="" value="8">
+							<input onclick="insert(9)" class="buttons" type="button" name="" value="9">
+							<input onclick="insert('*')" class="buttons" type="button" name="" value="X">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input onclick="insert(6)" class="buttons" type="button" name="" value="6">
+							<input onclick="insert(5)" class="buttons" type="button" name="" value="5">
+							<input onclick="insert(4)" class="buttons" type="button" name="" value="4">
+							<input onclick="insert('-')" class="buttons" type="button" name="" value="-">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input onclick="insert(3)" class="buttons" type="button" name="" value="3">
+							<input onclick="insert(2)" class="buttons" type="button" name="" value="2">
+							<input onclick="insert(1)" class="buttons" type="button" name="" value="1">
+							<input onclick="insert('+')" class="buttons" type="button" name="" value="+">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input onclick="insert(0)" class="buttons" type="button" name="" value="0">
+							<input onclick="insert('.')" class="buttons" type="button" name="" value=".">
+							<input onclick="equals()" class="buttons" type="button" name="" value="=" style="width: 163.5px">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+		
+	</div>
+</body>
+</html>

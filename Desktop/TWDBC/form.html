@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-in</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\Allwyn\Desktop\TWDBC\style.css">
+	
+
+</head>
+<body>
+
+	<h1>Register</h1>
+
+	<form>
+
+	<div>
+	<label for="firstName">First Name:* </label>
+	<input type="text" id="firstName" placeholder="Enter First Name" name="firstName" required>
+
+	<label for="lastName">Last Name:* </label>
+	<input type="text" id="lastName" placeholder="Enter Last Name" name="lastName" required>
+	</div>
+
+	<br><br>
+
+	<div>
+	<label for="male">Male</label>
+	<input type="radio" id="male" name="sex" value="MALE">
+	<label for="female">Female</label>
+	<input type="radio" id="female" name="sex" value="FEMALE">
+	<label for="other">Other</label>
+	<input type="radio" id="other" name="sex" value="OTHER">
+	</div>
+
+	<br><br>
+
+	<div>
+	<label for="email">Email:* </label>
+	<input type="email" id="email" name="email" required>
+	<label for="password">Password:* </label>
+	<input type="password" id="password" name="password" minlength="5" maxlength="8" required>
+	</div>
+
+	<br><br>
+
+	<div>
+	<label for="birthday">Birthday</label>
+	<select name="month" id="month_selector">
+		<option>month</option>
+		<option>Jan</option>
+		<option>Feb</option>
+		<option>Mar</option>
+	</select>
+
+	<select name="date">
+		<option>date</option>
+		<option>03</option>
+		<option>24</option>
+		<option>30</option>
+	</select>
+
+	<select name="year">
+		<option>year</option>
+		<option>1988</option>
+		<option>1989</option>
+		<option>2000</option>
+	</select>
+	</div>
+
+	<br><br>
+
+	<div>
+	<label for="agree">I Agree To The Terms And Conditions.</label>
+	<input type="checkbox" id="agree" name="Agreement" value="true">
+	</div>
+
+	<br><br>
+
+	<input type="submit">
+	</form>
+</body>
+</html>
