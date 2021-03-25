@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26437" started-at="2021-03-23T20:35:58Z" finished-at="2021-03-23T20:36:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26437" started-at="2021-03-23T20:35:58Z" finished-at="2021-03-23T20:36:24Z">
+      <class name="test.PetTests">
+        <test-method status="PASS" signature="verifyHomePageImg()[pri:1, instance:test.PetTests@47c62251]" name="verifyHomePageImg" duration-ms="7964" started-at="2021-03-23T20:35:58Z" finished-at="2021-03-23T20:36:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageImg -->
+        <test-method status="PASS" signature="findAllVets()[pri:2, instance:test.PetTests@47c62251]" name="findAllVets" duration-ms="788" started-at="2021-03-23T20:36:06Z" finished-at="2021-03-23T20:36:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllVets -->
+        <test-method status="PASS" signature="findAllOwners()[pri:3, instance:test.PetTests@47c62251]" name="findAllOwners" duration-ms="1406" started-at="2021-03-23T20:36:07Z" finished-at="2021-03-23T20:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllOwners -->
+        <test-method status="PASS" signature="addOwnerPet()[pri:4, instance:test.PetTests@47c62251]" name="addOwnerPet" duration-ms="3445" started-at="2021-03-23T20:36:08Z" finished-at="2021-03-23T20:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOwnerPet -->
+        <test-method status="PASS" signature="validateAddition()[pri:5, instance:test.PetTests@47c62251]" name="validateAddition" duration-ms="12778" started-at="2021-03-23T20:36:12Z" finished-at="2021-03-23T20:36:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddition -->
+      </class> <!-- test.PetTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
